@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Kevin Díaz">
+      <meta name="description" content="Smart Agency is a one page responsive Bootstrap 4 template. This is a free open source theme, you can use our theme for any purpose, even commercially. Create amazing websites with this easy to customize template.">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  
+      <!-- Style -->
+      <link rel="stylesheet" href="assets/css/styles.css">
+  
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+  
+      <!-- Ionic icons-->
+      <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="assets/images//favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .navbar {
+      background-color: #406ADE;
+    }
+    .navbar .navbar-brand {
+      color: #ecf0f1;
+    }
+    .navbar .navbar-brand:hover,
+    .navbar .navbar-brand:focus {
+      color: #ecdbff;
+    }
+    .navbar .navbar-text {
+      color: #ecf0f1;
+    }
+    .navbar .navbar-text a {
+      color: #ecdbff;
+    }
+    .navbar .navbar-text a:hover,
+    .navbar .navbar-text a:focus {
+      color: #ecdbff; 
+    }
+    .navbar .navbar-nav .nav-link {
+      color: #ecf0f1;
+      border-radius: .25rem;
+      margin: 0 0.25em;
+    }
+    .navbar .navbar-nav .nav-link:not(.disabled):hover,
+    .navbar .navbar-nav .nav-link:not(.disabled):focus {
+      color: #ecdbff;
+    }
+    .navbar .navbar-nav .nav-item.active .nav-link,
+    .navbar .navbar-nav .nav-item.active .nav-link:hover,
+    .navbar .navbar-nav .nav-item.active .nav-link:focus,
+    .navbar .navbar-nav .nav-item.show .nav-link,
+    .navbar .navbar-nav .nav-item.show .nav-link:hover,
+    .navbar .navbar-nav .nav-item.show .nav-link:focus {
+      color: #ecdbff;
+      background-color: #0e318e;
+    }
+    .navbar .navbar-toggler {
+      border-color: #0e318e;
+    }
+    .navbar .navbar-toggler:hover,
+    .navbar .navbar-toggler:focus {
+      background-color: #0e318e;
+    }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      color: #ecf0f1;
+    }
+    .navbar .navbar-collapse,
+    .navbar .navbar-form {
+      border-color: #ecf0f1;
+    }
+    .navbar .navbar-link {
+      color: #ecf0f1;
+    }
+    .navbar .navbar-link:hover {
+      color: #ecdbff;
+    }
+    
+    @media (max-width: 575px) {
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ecf0f1;
+      }
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ecdbff;
+      }
+      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ecdbff;
+        background-color: #0e318e;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ecf0f1;
+      }
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ecdbff;
+      }
+      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ecdbff;
+        background-color: #0e318e;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ecf0f1;
+      }
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ecdbff;
+      }
+      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ecdbff;
+        background-color: #0e318e;
+      }
+    }
+    
+    @media (max-width: 1199px) {
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #ecf0f1;
+      }
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #ecdbff;
+      }
+      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #ecdbff;
+        background-color: #0e318e;
+      }
+    }
+    
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ecf0f1;
+    }
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ecdbff;
+    }
+    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ecdbff;
+      background-color: #0e318e;
+    }
+    
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <body class="dark">
+            <header class="header">
+              <div class="switches">
+                <div  id="toggle-theme" class="toggle-theme">
+                <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon"/>
+                <p id="toggle-text" class="toggle-theme__text">dark mode</p>
+                </div>
+                  </div>
+                  <div class="colors">
+                    <div class="colors__item colors__item--blue"></div>
+                    <div class="colors__item colors__item--green"></div>
+                    <div class="colors__item colors__item--purple"></div>
+                    <div class="colors__item colors__item--orange"></div>
+                  </div>
+        
+            </header>
+            <script src="/assets/js/scripts.js"></script>
+        <div class="container">
+            <img src="assets/images//favicon.png" class="logo-brand" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/menu.svg">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Juegos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">s</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero2">
+      <duv class="container">
+      <div class="container-fluid">
+      <div class="content-center">
+        <br/>
+            <br/>
+            <h1 class="text-light">CATEGORIAS</h1>
+                
+    <a href="#Graficas" class="btn btn-secondary mt-4">Tarjetas graficas <img src="assets/images/arrow-right.svg" class="ml-2"></a>
+    <a href="#SSD" class="btn btn-secondary mt-4">Discos duros SSD<img src="assets/images/arrow-right.svg" class="ml-2"></a>
+    <a href="#RAM" class="btn btn-secondary mt-4"> Procesadores<img src="assets/images/arrow-right.svg" class="ml-2"></a>
+    <a href="#Procesadores" class="btn btn-secondary mt-4">Memorias RAM <img src="assets/images/arrow-right.svg" class="ml-2"></a>
+
+  </div>
+</div>
+</duv>
+</section>
+    <section id="">
+    <duv class="container"></duv>
+    <div class="content-center">
+              <main class="contenedor">
+                    <section id="Graficas">
+                        <div class="container-icon">
+                            <h1 class="nustros-productos">Tarjetas graficas</h1>
+                            <div class="content-center">   
+                          
+                    </header>
+                    <div class="container-items">
+                        <div class="item">
+                            <figure>
+                                <img
+                                    src="assets/images/13.png"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Zapatos Nike</h2>
+                                <p class="price">$80</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img
+                                    src="assets/images/14.png"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Audifonos</h2>
+                                <p class="price">$20</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img
+                                    src="assets/images/15.png"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj</h2>
+                                <p class="price">$50</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img
+                                    src="assets/images/16.png"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Smartwatch</h2>
+                                <p class="price">$90</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img
+                                    src="assets/images/15.png"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Perfume</h2>
+                                <p class="price">$50</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                             </div>
+                            
+                    </div>
+            
+                    <script src="index.js"></script>
+      </section>
+
+      <section id="SSD">
+        <div class="container-fluid">
+          <h1 class="nustros-productos">Discos duros SSD</h1>
+            <div class="content-center">
+            </header>
+            <div class="container-items">
+                <div class="item">
+                    <figure>
+                        <img
+                            src="assets/images/17.png"
+                            alt="producto"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Zapatos Nike</h2>
+                        <p class="price">$80</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img
+                            src="assets/images/18.png"
+                            alt="producto"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Audifonos</h2>
+                        <p class="price">$20</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img
+                            src="assets/images/19.png"
+                            alt="producto"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Reloj</h2>
+                        <p class="price">$50</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img
+                            src="assets/images/20.png"
+                            alt="producto"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Smartwatch</h2>
+                        <p class="price">$90</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img
+                            src="assets/images/19.png"
+                            alt="producto"
+                        />
+                    </figure>
+                    <div class="info-product">
+                        <h2>Perfume</h2>
+                        <p class="price">$50</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                     </div>
+                    
+            </div>
+    
+            <script src="index.js"></script>
+            
+    </section>
+
+
+
+    <section id="RAM">
+      <div class="container-fluid">
+        <h1 class="nustros-productos">Procesadores</h1>
+          <div class="content-center">
+        </header>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/21.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Zapatos Nike</h2>
+                    <p class="price">$80</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/22.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Audifonos</h2>
+                    <p class="price">$20</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/23.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Reloj</h2>
+                    <p class="price">$50</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/24.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Smartwatch</h2>
+                    <p class="price">$90</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/23.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Perfume</h2>
+                    <p class="price">$50</p>
+                    <button>Añadir al carrito</button>
+                </div>
+                 </div>
+                
+        </div>
+
+        <script src="index.js"></script>
+          
+      </div>
+  </section>
+
+
+
+  <section id="Procesadores">
+    <div class="container-fluid">
+      <h1 class="nustros-productos">Memorias RAM</h1>
+        <div class="content-center">
+        </header>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/25.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Zapatos Nike</h2>
+                    <p class="price">$80</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/26.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Audifonos</h2>
+                    <p class="price">$20</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/27.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Reloj</h2>
+                    <p class="price">$50</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/28.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Smartwatch</h2>
+                    <p class="price">$90</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="assets/images/27.png"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Perfume</h2>
+                    <p class="price">$50</p>
+                    <button>Añadir al carrito</button>
+                </div>
+                 </div>
+                
+        </div>
+
+        <script src="index.js"></script>
+</section>
+
+
+<section id="SSD">
+    <div class="container-fluid">
+      <h1 class="nustros-productos">Galeria de productos</h1>
+        <div class="content-center">
+            </div>
+            
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                      
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                            
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/17.png" class="img-fluid" alt="Portfolio 01">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/18.png" class="img-fluid" alt="Portfolio 02">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/19.png" class="img-fluid" alt="Portfolio 03">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/20.png" class="img-fluid" alt="Portfolio 04">
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class=""></p>
+            <a href="#hero2" class="text-dark"><b>Arriba</b></a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                      
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                            
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/21.png" class="img-fluid" alt="Portfolio 01">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/22.png" class="img-fluid" alt="Portfolio 02">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/23.png" class="img-fluid" alt="Portfolio 03">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/24.png" class="img-fluid" alt="Portfolio 04">
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class=""></p>
+            <a href="#hero2" class="text-dark"><b>Arriba</b></a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                      
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                            
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/25.png" class="img-fluid" alt="Portfolio 01">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/28.png" class="img-fluid" alt="Portfolio 02">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/26.png" class="img-fluid" alt="Portfolio 03">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/27.png" class="img-fluid" alt="Portfolio 04">
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class=""></p>
+            <a href="#hero2" class="text-dark"><b>Arriba</b></a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                      
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                            
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/13.png" class="img-fluid" alt="Portfolio 01">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/14.png" class="img-fluid" alt="Portfolio 02">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/15.png" class="img-fluid" alt="Portfolio 03">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2 class="text-dark"></h2>
+                        </a>
+                        <a href="#">
+                            <p class="text-dark"></p>
+                        </a>
+                    </div>
+                    <img src="assets/images/16.png" class="img-fluid" alt="Portfolio 04">
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class=""></p>
+            <a href="#hero2" class="text-dark"><b>Arriba</b></a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #406ADE;">
+      <div class="container">
+          <img src="assets/images/favicon.png" class="logo-brand" alt="logo">
+          <ul class="list-inline">
+              <li class="list-inline-item footer-menu"><a href="C:/Users/kevin/Desktop/EloBost/Proyecto/index.html">inicio</a></li>
+              <li class="list-inline-item footer-menu"><a href="C:/Users/kevin/Desktop/EloBost/Proyecto/Juegos.html">Productos</a></li>
+              <li class="list-inline-item footer-menu"><a href="C:/Users/kevin/Desktop/EloBost/Proyecto/Juegos.html">acerca de nostros</a></li>
+              <li class="list-inline-item footer-menu"><a href="C:/Users/kevin/Desktop/EloBost/Proyecto/Juegos.html">contacto</a></li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/kevxdia/"><img src="assets/images/instagram.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/DDTECHMX"><img src="assets/images/twitter.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCWGn1LoZYVm6-3NcKo08JhA"><img src="assets/images/youtube.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100064760380230"><img src="assets/images/facebook.svg" class="img-fluid"></a></li>
+          </ul>
+          <small>©2022 todos los derechos reservados. Creado por Marco Kevin Díaz Reyes <a href="" class="font-weight-bold" target="_blank"
+                  rel="noopener"></a></small>
+      </div>
+  </footer>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
